@@ -1,0 +1,12 @@
+.myFooter {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.centered-div {
+  margin: 0 10px;
+}
+
