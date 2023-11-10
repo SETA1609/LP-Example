@@ -1,9 +1,17 @@
-.Hobbies{
+.Hobbies {
     height: 100vh;
     width: 100%;
     background-color: darkblue;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex: 1 1 50%;
+    min-height: 25vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }

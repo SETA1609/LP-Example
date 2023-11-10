@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Card.css';
+import {ProfileContext} from "../../../context/profile-context.jsx";
 
-function Card({ Title, body }) {
+
+function Card({ title, body }) {
+
+	const {isDarkTheme}=useContext(ProfileContext);
+
 	return (
-		<div>
-			<h1>{Title}</h1>
-			{body}
+		<div className={isDarkTheme?"myCardDark card" :"myCardLight card"}>
+			<h1>{title}</h1>
+			<p>{body}</p>
 		</div>
 	);
 }
