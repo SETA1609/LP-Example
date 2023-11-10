@@ -3,8 +3,20 @@ import {useContext} from "react";
 import './Navbar.css';
 import Icons from './icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {ProfileContext} from "../../context/profile-context.jsx";
 
 function MyNavbar() {
+    const { changeLanguage, changeTheme, isDarkTheme } = useContext(ProfileContext);
+
+    const handleLanguageChange = (e) => {
+        const selectedLanguage = e.target.value;
+        changeLanguage(selectedLanguage);
+    };
+
+    const handleThemeChange = ()=>{
+        changeTheme();
+    };
+
     return (
         <header>
             <nav className="navbar">
@@ -17,11 +29,15 @@ function MyNavbar() {
                         </li>
                     ))}
                 </ul>
-                <select id="mySelect">
-                    <option value="EN" selected>EN</option>
+                <select id="mySelect" onChange={handleLanguageChange}>
+                    <option value="EN">EN</option>
                     <option value="ES">ES</option>
                     <option value="DE">DE</option>
                 </select>
+                <label >
+                    <input type="checkbox" checked={isDarkTheme} onChange={handleThemeChange} />
+                    <span ></span>
+                </label>
             </nav>
         </header>
     );

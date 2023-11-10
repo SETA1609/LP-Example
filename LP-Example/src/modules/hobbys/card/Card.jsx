@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css';
 
-function Card({ title, body }) {
+function Card({ Title, body }) {
 	return (
 		<div>
-			<h1>{title}</h1>
-			<p>{body}</p>
+			<h1>{Title}</h1>
+			{body}
 		</div>
 	);
 }

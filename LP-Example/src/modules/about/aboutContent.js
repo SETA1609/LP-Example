@@ -1,0 +1,23 @@
+ export const aboutContent=[
+     {
+         language:"EN",
+         content:{
+             body:"",
+             quote:""
+         }
+     },
+     {
+         language:"ES",
+         content:{
+             body:"",
+             quote:""
+         }
+     },
+     {
+         language:"DE",
+         content:{
+             body:"",
+             quote:""
+         }
+     }
+ ];
