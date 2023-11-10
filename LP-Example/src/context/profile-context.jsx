@@ -3,6 +3,8 @@ import {createContext} from 'react';
 export const ProfileContext = createContext(
 	{
 		isDarkTheme: true,
-		Language: "EN"
+		selectedLanguage: "EN",
+		changeLanguage: ()=>{},
+		changeTheme:()=>{}
 	}
 );

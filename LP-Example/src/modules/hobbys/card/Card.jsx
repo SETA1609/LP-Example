@@ -1,14 +1,13 @@
 import React from 'react';
 import './Card.css';
 
-function Card(props){
-	
-	return(
+function Card({ title, body }) {
+	return (
 		<div>
-			<h1>{props.Title}</h1>
-		<p>{props.body}</p>
+			<h1>{title}</h1>
+			<p>{body}</p>
 		</div>
-	)
+	);
 }
 
 export default Card;

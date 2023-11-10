@@ -16,6 +16,11 @@ function MyNavbar() {
             </li>
           ))}
         </ul>
+          <select id="mySelect">
+              <option value="EN" selected>EN</option>
+              <option value="ES" >ES</option>
+              <option value="DE">DE</option>
+          </select>
       </nav>
     </header>
   );
