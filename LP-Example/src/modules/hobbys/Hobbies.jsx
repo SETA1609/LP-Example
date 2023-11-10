@@ -19,7 +19,9 @@ function Hobbies() {
     return (
         <div className="Hobbies">
             {hobbyContent.map((item, index) => (
-                <Card key={index} title={item.title} body={item.body} />
+                <div key={index}  className="grid-item">
+                    <Card title={item.title} body={item.body} />
+                </div>
             ))}
         </div>
     );
