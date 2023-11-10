@@ -1,6 +1,6 @@
 import React from 'react';
 import'./Hobbys.css';
-import content from './content';
+import hobbysContent from './hobbysContent.js';
 import Card from './card/Card';
 
 function Hobbys(content){

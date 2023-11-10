@@ -1,4 +1,4 @@
-const content = [
+const hobbysContent = [
   {
     Language: "EN",
     Title: ["Programming", "Martial Arts", "Learning", "Farming"],
@@ -31,5 +31,5 @@ const content = [
   },
 ];
 
-export default content;
+export default hobbysContent;
 
