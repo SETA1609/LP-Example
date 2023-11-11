@@ -1,10 +1,54 @@
-.About {
+.about {
 	height: 100vh;
 	width: 100%;
-	background-color: blueviolet;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
+.aboutDark {
+	background-color: blueviolet;
+	color: beige;
+}
+
+.aboutLight {
+	background-color: antiquewhite;
+	color: black;
+}
+
+h1 {
+	margin-bottom: 15%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	border-radius: 25px;
+	border-width: 5px;
+	border-style: double;
+	padding: 25px;
+	margin-top: 10%;
+}
+
+.contentDark {
+	background-color: darkblue;
+	border-color: beige;
+}
+
+.contentLight {
+	background-color: aqua;
+	border-color: coral;
+}
+
+p {
+	width: 80%;
+	margin-bottom: 5%;
+}
+
+ul {
+	padding-bottom: 5px;
+}

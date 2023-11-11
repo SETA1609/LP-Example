@@ -4,7 +4,7 @@ import {aboutContent} from "./aboutContent.js";
 import {ProfileContext} from "../../context/profile-context.jsx";
 
 function About() {
-	const { selectedLanguage } = useContext(ProfileContext);
+	const { selectedLanguage , isDarkTheme } = useContext(ProfileContext);
 
 	const selectedAboutContent = aboutContent.find(
 		(content) => content.language === selectedLanguage
@@ -17,16 +17,19 @@ function About() {
 	const { greeting, body, quote } = selectedAboutContent.content;
 
 	return (
-		<div className="About">
+		<div className={isDarkTheme? "about aboutDark": "about aboutLight"}>
 			<h1>{greeting}</h1>
-			<p>{body}</p>
-			{quote && (
-				<ul>
-					{quote.map((line, index) => (
-						<li key={index}>{line}</li>
-					))}
-				</ul>
-			)}
+			<div className={isDarkTheme? "contentDark content": "contentLight content"} >
+				<p>{body}</p>
+				{quote && (
+					<ul>
+						{quote.map((line, index) => (
+							<li key={index}>{line}</li>
+						))}
+					</ul>
+				)}
+			</div>
+
 		</div>
 	);
 }
