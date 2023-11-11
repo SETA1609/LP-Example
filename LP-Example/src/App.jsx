@@ -4,7 +4,7 @@ import MyNavbar from './modules/navbar/Navbar'
 import About from './modules/about/About'
 import Landing from './modules/landing/Landing'
 import Footer from './modules/footer/Footer'
-import Hobbies from './modules/hobbys/Hobbies.jsx'
+import Hobbies from './modules/hobbies/Hobbies.jsx'
 import {ProfileContext, ProfileContextProvider} from './context/profile-context.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row} from 'react-bootstrap'; // Import individual Bootstrap components as needed
@@ -12,12 +12,11 @@ import {Container, Row} from 'react-bootstrap'; // Import individual Bootstrap c
 
 function App() {
 
-    const { isDarkTheme } = useContext(ProfileContext);
 
     return (
         <ProfileContextProvider>
 
-            <Container className={isDarkTheme?"bg-dark container-fluid":"bg-light container-fluid"}>
+            <Container >
                 <Row>
                     < MyNavbar/>
                 </Row>
