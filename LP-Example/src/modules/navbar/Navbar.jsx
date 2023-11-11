@@ -19,7 +19,7 @@ function MyNavbar() {
 
     return (
 
-        <Navbar expand="lg" className={isDarkTheme ? 'navbar navbar-dark bg-dark myNavbar fixed-top' : 'fixed-top myNavbar bg-secondary navbar navbar-light'}>
+        <Navbar expand="lg" className={isDarkTheme ? 'navbar navbar-dark bg-dark myNavbar fixed-top ' : 'fixed-top myNavbar bg-secondary navbar navbar-light'}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -35,11 +35,11 @@ function MyNavbar() {
                         isDarkTheme?
                             ( <>
                                     <Dropdown onSelect={handleLanguageChange} >
-                                <Dropdown.Toggle className="btn-dark border-light "  id="dropdown-basic">
+                                <Dropdown.Toggle className="btn-dark border-light  "  id="dropdown-basic">
                                     {selectedLanguage}
                                 </Dropdown.Toggle>
 
-                                <Dropdown.Menu>
+                                <Dropdown.Menu className="dropdown-menu dropdown-menu-dark">
                                     <Dropdown.Item eventKey="EN">EN</Dropdown.Item>
                                     <Dropdown.Item eventKey="ES">ES</Dropdown.Item>
                                     <Dropdown.Item eventKey="DE">DE</Dropdown.Item>
@@ -55,7 +55,7 @@ function MyNavbar() {
                                         {selectedLanguage}
                                     </Dropdown.Toggle>
 
-                                    <Dropdown.Menu>
+                                    <Dropdown.Menu className="dropdown-menu dropdown-menu-dark">
                                         <Dropdown.Item eventKey="EN">EN</Dropdown.Item>
                                         <Dropdown.Item eventKey="ES">ES</Dropdown.Item>
                                         <Dropdown.Item eventKey="DE">DE</Dropdown.Item>

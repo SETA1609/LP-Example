@@ -12,9 +12,9 @@ return(
 
 			<footer className={isDarkTheme?"bg-dark contentDark":"bg-secondary contentLight "}>
 					<Row>
-						<Col className=" col-6 text-center">Made by Sebastian Tamayo</Col>
+						<div className=" col-12 text-center">Made by Sebastian Tamayo</div>
 
-						<Col className=" col-6 text-center">@SETA1609</Col>
+						<div className=" col-12 text-center">@SETA1609</div>
 					</Row>
 
 

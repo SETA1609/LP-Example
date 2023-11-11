@@ -28,7 +28,7 @@ function Landing() {
         <Container
             className={
                 isDarkTheme
-                    ? 'landing bg-primary contentDark d-flex flex-column align-items-center justify-content-center'
+                    ? 'landing landingDark contentDark d-flex flex-column align-items-center justify-content-center'
                     : 'landing bg-danger-subtle contentLight d-flex flex-column align-items-center justify-content-center text-bg-light'
             }
         >
